@@ -14,6 +14,7 @@ img {
 .carousel-container > div > img {
     width: 600px;
     object-fit: cover;
+    position: relative;
 }
 .my-btn-left {
     position: absolute;
@@ -23,5 +24,26 @@ img {
 .my-btn-right {
     position: absolute;
     top: 50%;
+    right: 0;
+}
+.not-active {
+    display: none;
+}
+.active {
+    display: block;
+}
+.activep {
+    display: inline-block;
+}
+.img-title {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+}
+.img-info {
+    color: white;
+    position: absolute;
+    bottom: 0%;
     right: 0;
 }
