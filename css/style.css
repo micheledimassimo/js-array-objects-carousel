@@ -16,6 +16,9 @@ img {
     object-fit: cover;
     position: relative;
 }
+.not-activep {
+    display: none;
+}
 .my-btn-left {
     position: absolute;
     top: 50%;

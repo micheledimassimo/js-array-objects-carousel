@@ -48,10 +48,10 @@ nextImage.addEventListener('click', function () {
           const carouselImages = document.querySelectorAll('.carousel-container > img');
           const carouselP = document.querySelectorAll('.carousel-container > p');
           carouselImages[currentImg].classList.remove('active');
-            carouselP[currentImg].classList.remove('activep');
+            carouselP[currentImg].classList.add('not-activep');
            currentImg++;
           carouselImages[currentImg].classList.add('active');
-          carouselP[currentImg].classList.add('activep');
+          carouselP[currentImg].classList.remove('not-activep');
           
         }
         
@@ -62,9 +62,12 @@ const prevImage = document.getElementById('prev');
 prevImage.addEventListener('click', function () {
         if (currentImg > 0) {
           const carouselImages = document.querySelectorAll('.carousel-container > img');//seleziona tutte le immagini del carousel
+          const carouselP = document.querySelectorAll('.carousel-container > p');
           carouselImages[currentImg].classList.remove('active'); //rimozione classe active dell'elemento attuale
+          carouselP[currentImg].classList.add('not-activep');
            currentImg--;
           carouselImages[currentImg].classList.add('active'); //aggiunta classe active
+          carouselP[currentImg].classList.remove('not-activep');
           
         }
         
